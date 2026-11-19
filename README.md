@@ -2,8 +2,6 @@
 
 A full-stack MERN web application that lets users request e-waste pickups and track them, while admins review requests, schedule collections and maintain recycling records.
 
-> Developed as part of **Professional Training I**, School of Computing, Sathyabama Institute of Science and Technology.
-
 ![Landing page](screenshots/landing.png)
 
 ## Problem
@@ -109,7 +107,3 @@ server/       models.js, routes.js, server.js
 - Map-based pickup routes
 - Real-time updates with WebSockets
 - Cloud deployment
-
-## Author
-**Dharan S** – [LinkedIn](YOUR-LINKEDIN-URL) · [GitHub](https://github.com/YOUR-USERNAME)
-Guide: Ms. R. Ramyabharathi, Assistant Professor, CSE
