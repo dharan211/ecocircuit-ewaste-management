@@ -41,7 +41,29 @@ EcoCircuit provides one platform where users submit disposal requests and follow
 ## Architecture
 React frontend → REST API (Express + Node) → MongoDB
 
-![Architecture](screenshots/architecture.png)
+## Architecture
+
+```mermaid
+flowchart LR
+    subgraph Client ["Frontend (React + Vite)"]
+        UI[User & Admin UI]
+        Router[React Router]
+    end
+
+    subgraph Server ["Backend (Node.js + Express)"]
+        API[REST API]
+        Auth[JWT & RBAC Middleware]
+    end
+
+    subgraph DB ["Database"]
+        Mongo[(MongoDB / Mongoose)]
+    end
+
+    UI --> Router
+    Router -->|HTTP / JSON + Bearer Token| Auth
+    Auth --> API
+    API -->|Queries & Aggregations| Mongo
+```
 
 ## Screenshots
 | User dashboard | New request |
