@@ -72,7 +72,7 @@ flowchart LR
 
 | Admin panel | Recycling records |
 |---|---|
-| ![](screenshots/admin.png) | ![](screenshots/records.png) |
+| ![](screenshots/admin.png) | ![](screenshots/record.png) |
 
 ## Getting Started
 
